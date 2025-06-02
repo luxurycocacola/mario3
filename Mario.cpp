@@ -111,7 +111,7 @@ void Mario::OnBeginContact(b2Fixture* self, b2Fixture* other)
 	else if (data->type == FixtureDataType::Object && data->object->tag == "coin") {
 		
 		DeleteObject(data->object);
-		std::cout << "coins = " << ++coins << "\n";
+		coins++;
 	}
 
 	else if (data->type == FixtureDataType::Object && data->object->tag == "enemy") {
