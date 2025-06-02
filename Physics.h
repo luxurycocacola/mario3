@@ -36,9 +36,9 @@ struct FixtureData
 class Physics
 {
 public:
+	static b2ContactListener* contactListener;
 	static void Init();
 	static void Update(float deltaTime);
 
 	static b2World* world;
 };
-
