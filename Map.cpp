@@ -10,24 +10,6 @@ Map::Map(float cellSize)
 	: cellSize(cellSize), grid() {
 
 }
-
-void Map::CreateCheckerboard(size_t width, size_t height)
-{
-	grid = std::vector(width, std::vector(height, (sf::Texture*)nullptr));
-	bool last = 0;
-	for (auto& column : grid) {
-
-		for (auto& cell : column) {
-
-			last =  !last;
-			if (last)
-				cell = &Resources::textures["block.png"];
-		}
-		if (width % 2 == 0)
-			last = !last;
-	}
-}
-
 sf::Vector2f Map::CreateFromImage(const sf::Image& image, std::vector<Object*>& objects)
 {
 	objects.clear();
