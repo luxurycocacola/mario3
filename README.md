@@ -15,7 +15,7 @@ Marioshka — учебный 2D-платформер, созданный на C+
 
 ## Демонстрация
 
-[Смотреть видео на YouTube](https://youtube.com/your-demo-video-link)  
+[Смотреть видео на YouTube]([https://youtube.com/your-demo-video-link](https://www.youtube.com/watch?v=bBPMZvtBOTA))  
 
 ## Технологии и особенности
 
