@@ -101,7 +101,6 @@ void Render(Renderer& renderer) {
     }
     if (mario) mario->Draw(renderer);
 
-    Physics::DebugDraw(renderer);
 }
 
 void RenderUI(Renderer& renderer)
